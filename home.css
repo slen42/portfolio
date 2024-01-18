@@ -1,0 +1,65 @@
+body {
+    background-color: #161925;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.desc {
+    text-align: center;
+    max-width: 90%; /* Set a maximum width for better responsiveness */
+    margin: 0 auto; /* Center the element */
+}
+
+.socials {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow social items to wrap to the next line on smaller screens */
+    justify-content: center; /* Center the social items */
+    gap: 20px;
+}
+
+.social_item {
+    text-align: center; /* Center the content in each social item */
+}
+
+.links {
+    padding-left: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.title {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 25%; /* Position the pseudo-element at the bottom */
+    left: 50%;
+    width: 60vh;
+    transform: translateX(-50%);
+    background-color: #334E51; /* Set the background color of the box */
+    padding: 10px; /* Adjust padding as needed */
+    z-index: -1;
+}
+
+
+
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .socials {
+        flex-direction: column; /* Stack social items vertically on smaller screens */
+        align-items: center; /* Center the social items */
+    }
+}
