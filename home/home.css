@@ -24,14 +24,14 @@ body {
 .title::before {
     content: "";
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
     left: 50%;
-    width: 110%; /* Adjust this value for bar behind title */
+    width: 103%; /* Adjust this value for bar behind title */
     transform: translateX(-50%);
-    background-color: #082755 ;
-
+    background-color: #082755;
     padding: 15px;
     z-index: -1;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 
