@@ -1,5 +1,12 @@
 body {
-    background-color: #161925;
+    /* background-color: #161925; */
+    background-image: linear-gradient(to bottom, #051937, #171228, #190a1a, #12040d, #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    background-attachment: fixed;
+    
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
