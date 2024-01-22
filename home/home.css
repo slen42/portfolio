@@ -11,7 +11,11 @@ body {
     background-color: #131313;
     color: #bbbbbb;
     transition: all .2s ease;
+    font-family: 'Montserrat';
 }
+
+
+/* header css */
 
 .head {
     -webkit-user-select: none;
@@ -30,4 +34,41 @@ body {
     text-align: center;
 }
 
+.head-wrapper-description {
+    max-width: 750px;
+    line-height: 1.8;
+    font-size: 20px;
+}
 
+
+
+/* About section */
+
+/* about me css  */
+/* ... */
+
+
+/* skillset css */
+.skillset {
+    gap: 10px;
+
+
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.skills {
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.skills span {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #333333;
+    background-color: #232323;
+    box-shadow: 0 2px 3px #0000003d;
+}
