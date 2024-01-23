@@ -40,7 +40,11 @@ body {
     font-size: 20px;
 }
 
-
+.head-wrapper-secondtitle{
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    color: transparent;
+}
 
 /* About section */
 
