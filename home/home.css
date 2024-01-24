@@ -1,8 +1,9 @@
-root{
+:root {
     --green: #40cf8e;
     --text-color: #bbbbbb;
     --white-color: #ededed;
     --black-color: #131313;
+    --blue: #1af7ff;
 }
 
 body {
@@ -14,9 +15,7 @@ body {
     font-family: 'Montserrat';
 }
 
-
-/* header css */
-
+/* Header CSS */
 .head {
     -webkit-user-select: none;
     user-select: none;
@@ -40,67 +39,46 @@ body {
     font-size: 20px;
 }
 
-
-
-/* Commented out due to color change */
-/* .head-wrapper-secondtitle{
-    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-    background-clip: text;
-    color: transparent;
-} */ 
-
 .subtitle {
     position: relative;
-    font-size: 2rem; /* You can adjust the font size accordingly */
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 80px;
     cursor: pointer;
     font-family: "Kanit", sans-serif;
-  }
-  
-  :root {
-    --green: #1af7ff; /* Adjust the color variable as needed */
-  }
-  
-  .text {
+}
+
+
+.text {
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
     transition: 1s ease-in-out;
     transition-delay: 0.25s;
-  }
-  
-  .hover-text {
+}
+
+.hover-text {
     position: absolute;
     inset: 0;
     width: 0%;
-    color: var(--green);
+    color: var(--blue);
     overflow: hidden;
-    border-right: 6px solid var(--green);
+    border-right: 6px solid var(--blue);
     transition: 2s ease-in-out;
-  }
-  
-  .subtitle:hover .hover-text {
+}
+
+.subtitle:hover .hover-text {
     width: 100%;
-    filter: drop-shadow(0 0 40px var(--green));
-  }
-  .subtitle:hover .text {
+    filter: drop-shadow(0 0 40px var(--blue));
+}
+
+.subtitle:hover .text {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
-  }
-  
+}
 
-
-/* About section */
-
-/* about me css  */
-/* ... */
-
-
-/* skillset css */
+/* Skillset CSS */
 .skillset {
     gap: 10px;
-
-
     display: flex;
     margin-top: 30px;
     flex-direction: column;
@@ -119,4 +97,24 @@ body {
     border: 1px solid #333333;
     background-color: #232323;
     box-shadow: 0 2px 3px #0000003d;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .head {
+        height: 100vh;
+    }
+
+    .head-wrapper-description {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+
+    .skills span {
+        font-size: 10px;
+    }
 }
