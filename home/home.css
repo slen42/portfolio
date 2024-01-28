@@ -49,32 +49,36 @@ body {
     font-family: "Kanit", sans-serif;
 }
 
-
-.text {
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
-    transition: 1s ease-in-out;
-    transition-delay: 0.25s;
+h3{
+    font-family: "Incosolata", Consolas, monospace;
+    font-size: 2rem;
+    color: #1af7ff;
 }
-
-.hover-text {
+.typewriter{
+    position: relative;
+}
+.typewriter::after{
+    content: '|';
     position: absolute;
-    inset: 0;
-    width: 0%;
-    color: var(--blue);
-    overflow: hidden;
-    border-right: 6px solid var(--blue);
-    transition: 2s ease-in-out;
-}
-
-.subtitle:hover .hover-text {
+    text-align: left;
+    right: 0;
+    color: #1af7ff;
+    background: linear-gradient(180deg,#050505, #050505);
     width: 100%;
-    filter: drop-shadow(0 0 40px var(--blue));
+    animation: typing 3s steps(45);
+    animation-fill-mode: forwards ;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    100%{
+        color: transparent;
+    }
 }
 
-.subtitle:hover .text {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
-}
 
 /* Skillset CSS */
 .skillset {
