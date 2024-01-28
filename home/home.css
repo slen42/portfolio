@@ -6,6 +6,7 @@
     --blue: #1af7ff;
 }
 
+
 body {
     letter-spacing: 1px;
     font-weight: 300;
@@ -13,6 +14,7 @@ body {
     color: #bbbbbb;
     transition: all .2s ease;
     font-family: 'Montserrat';
+
 }
 
 /* Header CSS */
@@ -24,6 +26,7 @@ body {
     justify-content: center;
     height: 60vh;
     background: linear-gradient(180deg,black,rgba(0,0,0,1),rgba(0,0,0,.9),rgba(0,0,0,.8),rgba(0,0,0,.7),rgba(0,0,0,.6),rgba(0,0,0,.5),rgba(0,0,0,.4),rgba(0,0,0,.3),rgba(0,0,0,.2),rgba(0,0,0,.1),var(--black-color));
+    width: 100%;
 }
 
 .head-wrapper {
@@ -43,20 +46,17 @@ body {
     position: relative;
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 80px;
-    cursor: pointer;
-    font-family: "Kanit", sans-serif;
+    letter-spacing: 4px;
+    line-height: 75px;
 }
 
-h3{
-    font-family: "Incosolata", Consolas, monospace;
-    font-size: 2rem;
-    color: #1af7ff;
-}
+
 .typewriter{
     position: relative;
+    font-size: 3rem;
+    color: #1af7ff;
 }
+
 .typewriter::after{
     content: '|';
     position: absolute;
@@ -65,7 +65,7 @@ h3{
     color: #1af7ff;
     background: linear-gradient(180deg,#050505, #050505);
     width: 100%;
-    animation: typing 3s steps(45);
+    animation: typing 1s steps(400);
     animation-fill-mode: forwards ;
 }
 @keyframes typing{
