@@ -153,8 +153,7 @@ body {
     }
 }
 
-
-.projects {
+.projects-container {
     gap: 20px;
     display: flex;
     margin-top: 50px;
@@ -162,12 +161,25 @@ body {
 }
 
 @media screen and (min-width: 650px) {
-    .projects {
+    .projects-headline {
+        font-size: 22px;
+    }
+}
+
+.projects-headline {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .projects-container {
         gap: 30px;
     }
 }
 
-.projects-showcase {
+.projects-wrapper {
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -216,7 +228,7 @@ body {
 
 
 
-.projects-card-gardient {
+.projects-card-gradient {
     top: 0;
     left: 0;
     width: 150px;
