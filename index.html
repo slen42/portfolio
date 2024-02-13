@@ -14,6 +14,17 @@
 
     <body>
         <div id="root">
+            <div id = "home"></div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class = "link">Home</a></li>
+                    <li><a href="#about" class = "link">About</a></li>
+                    <li><a href="#projects" class = "link">Projects</a></li>
+                    <li><a href="#contact" class = "link">Contact</a></li>
+                </ul>
+            </nav>
+
+
             <!-- Header and Description -->
             <div class="head">
                 <img src="/images/gradient-625d94e6.webp" class="img">
@@ -41,6 +52,7 @@
 
             <div class="main">
                 <!-- About Me -->
+                <div id = "about"></div>
                 <div class="about-wrapper">
                     <h2 class="about-title">About me</h2>
                     <p class="about-description">
@@ -68,28 +80,36 @@
                         this
                         website. Testing.
                     </p>
-                </div>
-                <!-- Skillset -->
-                <div class="skillset">
-                    <h2 class="skillset-title">Skillset</h2>
-                    <div class="skills">
-                        <span>Python</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Git</span>
-                        <span>Scrum</span>
-                        <span>Agile</span>
+
+                    <!-- Skillset -->
+                    <div class="skillset">
+                        <h2 class="skillset-title">Skillset</h2>
+                        <div class="skills">
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                            <span>Scrum</span>
+                            <span>Agile</span>
+                        </div>
                     </div>
+
                 </div>
+                <!-- About-wrapper-div -->
+                
+
+
 
                 <br>
 
+                <div id = "projects"></div>
                 <div class="projects-container">
                     <h2 class="projects-headline">Projects</h2>
                     
                     <div class="projects-wrapper">
                         <div class="projects-card">
+
                             <div class="projects-card-gradient"></div>
                             <div class="projects-card-links">
                                 <a href="https://github.com/slen42/portfolio" target="_blank">
@@ -111,6 +131,7 @@
                             <div class="projects-card-languages">
                                 <span>HTML</span>
                                 <span>CSS</span>
+                                <span>JS</span>
                             </div>
 
 
@@ -126,35 +147,52 @@
                 
 
             <br>
+              
 
-            <!-- Socials Link -->
-            <div class="socials">
-                <div class="social_item">
-                    <!-- Gmail Link -->
-                    <img class="icon" src="images/output-onlinepngtools (1).png"
-                        alt="Mail Icon" width="20" height="20">
-                    <a class="links"
-                        href="mailto:thejanlenaduwa@gmail.com">thejanlenaduwa@gmail.com</a>
+
+            <footer class ="footer">
+                
+                <div id = "contact"></div>
+                
+                <span>© Savinda Lenaduwa. 2024</span>
+                            <!-- Socials Link -->
+                <div class="footer-socials">
+                    <div class="social_item">
+                        <!-- Gmail Link -->
+
+                        <a class="links"
+                            href="mailto:thejanlenaduwa@gmail.com">
+                            <img class="icon" src="images/output-onlinepngtools (1).png"
+                            alt="Mail Icon" width="20" height="20">
+                        </a>
+                    </div>
+
+                    <div class="social_item">
+                        <!-- LinkedIn Link -->
+                        
+                        <a class="links"
+                            href="https://www.linkedin.com/in/savinda-lenaduwa-371846193/"
+                            target="_blank">
+                            <img class="icon" src="images/output-onlinepngtools.png"
+                            alt="Mail Icon" width="20" height="20">
+                        </a>
+                    </div>
+
+                    <div class="social_item">
+                        <!-- GitHub Link -->
+                        
+                        <a class="links" href="https://github.com/slen42"
+                            target="_blank">
+                            <img class="icon" src="images/github-mark-white.png"
+                            alt="Mail Icon" width="20" height="20">
+                        </a>
+                    </div>
+
                 </div>
+                <span>Contact me here!</span>
 
-                <div class="social_item">
-                    <!-- LinkedIn Link -->
-                    <img class="icon" src="images/output-onlinepngtools.png"
-                        alt="Mail Icon" width="20" height="20">
-                    <a class="links"
-                        href="https://www.linkedin.com/in/savinda-lenaduwa-371846193/"
-                        target="_blank">/savindalenaduwa</a>
-                </div>
+            </footer>
 
-                <div class="social_item">
-                    <!-- GitHub Link -->
-                    <img class="icon" src="images/github-mark-white.png"
-                        alt="Mail Icon" width="20" height="20">
-                    <a class="links" href="https://github.com/slen42"
-                        target="_blank">/slen42</a>
-                </div>
-
-            </div>
 
         </div>
 
