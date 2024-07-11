@@ -202,6 +202,10 @@ ul {
     flex-direction: column;
 }
 
+.skillset-subtitle {
+    font-size: 15px;
+}
+
 .skills {
     gap: 6px;
     display: flex;
